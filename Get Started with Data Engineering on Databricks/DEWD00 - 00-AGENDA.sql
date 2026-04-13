@@ -1,0 +1,57 @@
+-- Databricks notebook source
+-- MAGIC %md
+-- MAGIC
+-- MAGIC <div style="text-align: center; line-height: 0; padding-top: 9px;">
+-- MAGIC   <img
+-- MAGIC     src="https://databricks.com/wp-content/uploads/2018/03/db-academy-rgb-1200px.png"
+-- MAGIC     alt="Databricks Learning"
+-- MAGIC   >
+-- MAGIC </div>
+-- MAGIC
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC # Introdução à engenharia de dados no Databricks
+-- MAGIC
+-- MAGIC Este curso apresenta as habilidades básicas necessárias para executar um fluxo de trabalho básico de engenharia de dados no **Databricks Data Intelligence Platform**. Você explorará o workspace e aprenderá a interagir com objetos importantes, como catálogos, esquemas, volumes, tabelas, clusters de compute e Notebooks.
+-- MAGIC
+-- MAGIC Você seguirá um fluxo de trabalho passo a passo abrangendo:
+-- MAGIC
+-- MAGIC - Criação e gerenciamento de tabelas Delta Lake
+-- MAGIC - Ingestão de dados em Delta Lake
+-- MAGIC - Transformação de dados utilizando a **arquitetura medallion**
+-- MAGIC - Orquestração de pipelines de dados com **Databricks Workflows**
+-- MAGIC
+-- MAGIC O curso termina com um exercício de laboratório abrangente (disponível com uma **assinatura do Databricks Labs**) que permite que você aplique o que aprendeu em um ambiente Databricks Workspace real.
+-- MAGIC
+-- MAGIC
+-- MAGIC ---
+-- MAGIC ### Pré-requisitos
+-- MAGIC O conteúdo foi desenvolvido para os participantes com as seguintes competências/conhecimentos/habilidades:
+-- MAGIC - Uma compreensão básica dos princípios e tópicos de engenharia de dados, tais como `data collection`, `extraction`, `ingestion`, e `transformation`. 
+-- MAGIC
+-- MAGIC
+-- MAGIC ---
+-- MAGIC
+-- MAGIC ## Agenda do curso
+-- MAGIC Os módulos a seguir fazem parte do **Trilha de Aprendizagem de Engenharia de Dados** da Databricks Academy.
+-- MAGIC
+-- MAGIC | # | Nome do módulo | Nome da lição |
+-- MAGIC |---|-------------|-------------|
+-- MAGIC | 1 | [Databricks Overview]($./M1 - Databricks Overview) |  [01 - Databricks Workspace Walkthrough]($./M1 - Databricks Overview/01 - Databricks Workspace Walkthrough) <br>  |
+-- MAGIC | 2 | [Using Databricks for Data Engineering]($./M2 - Using Databricks for Data Engineering) | [01-Criando e trabalhando com uma tabela Delta]($./M2 - Using Databricks for Data Engineering/DEWD00 - 01-Creating and Working with a Delta Table) <br> [02-Ingesting Data into Delta Lake]($./M2 - Using Databricks for Data Engineering/DEWD00 - 02-Ingesting Data into Delta Lake) <br> [03-Transformando dados usando a Arquitetura Medallion]($./M2 - Using Databricks for Data Engineering/DEWD00 - 03-Transforming Data Using the Medallion Architecture) <br> [04-Creating a Simple Databricks Job]($./M2 - Using Databricks for Data Engineering/DEWD00 - 04-Creating a Simple Databricks Job) <br> [04A-LakeFlow Tarefa 1 - Configuração - Bronze]($./M2 - Using Databricks for Data Engineering/DEWD00 - 04A-Task 1 - Setup - Bronze) <br> [04B-LakeFlow Task 2 - Silver - Gold]($./M2 - Using Databricks for Data Engineering/DEWD00 - 04B-Task 2 - Silver - Gold) <br> [05L - Ingerir e Manipular um Laboratório de Tabela Delta]($./M2 - Using Databricks for Data Engineering/DEWD00 - 05L - Ingest and Manipulate a Delta Table Lab)  |
+-- MAGIC
+-- MAGIC
+-- MAGIC ---
+-- MAGIC
+-- MAGIC ## Requisitos
+-- MAGIC
+-- MAGIC Por favor, revise os seguintes requisitos antes de iniciar a lição:
+-- MAGIC
+-- MAGIC - Use a versão Databricks Runtime: **`17.3.x-scala2.13`** para executar todos os Notebooks de demonstração e laboratório.
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC &copy; 2025 Databricks, Inc. All rights reserved. Apache, Apache Spark, Spark, the Spark Logo, Apache Iceberg, Iceberg, and the Apache Iceberg logo are trademarks of the <a href="https://www.apache.org/" target="_blank">Apache Software Foundation</a>.<br/><br/><a href="https://databricks.com/privacy-policy" target="_blank">Privacy Policy</a> | <a href="https://databricks.com/terms-of-use" target="_blank">Terms of Use</a> | <a href="https://help.databricks.com/" target="_blank">Support</a>
